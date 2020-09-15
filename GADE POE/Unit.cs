@@ -28,6 +28,6 @@ namespace GADE_POE
         abstract public bool inRange(Unit u);
         abstract public Unit Closest(Unit[] units);
         abstract public bool IsDead();
-        //abstract public void tostring();
+        abstract public new string ToString();
     }
 }

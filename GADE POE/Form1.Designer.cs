@@ -46,18 +46,19 @@
             // groupBox1
             // 
             this.groupBox1.Location = new System.Drawing.Point(16, 15);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(871, 718);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Map";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // txtTurn
             // 
             this.txtTurn.Location = new System.Drawing.Point(896, 62);
-            this.txtTurn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTurn.Margin = new System.Windows.Forms.Padding(4);
             this.txtTurn.Name = "txtTurn";
             this.txtTurn.Size = new System.Drawing.Size(132, 22);
             this.txtTurn.TabIndex = 1;
@@ -65,7 +66,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(896, 95);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 28);
             this.button1.TabIndex = 2;
@@ -76,7 +77,7 @@
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(896, 132);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 28);
             this.button2.TabIndex = 3;
@@ -87,7 +88,7 @@
             // txtInfo
             // 
             this.txtInfo.Location = new System.Drawing.Point(896, 169);
-            this.txtInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtInfo.Margin = new System.Windows.Forms.Padding(4);
             this.txtInfo.Multiline = true;
             this.txtInfo.Name = "txtInfo";
             this.txtInfo.Size = new System.Drawing.Size(217, 132);
@@ -103,7 +104,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtTurn);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

@@ -124,7 +124,7 @@ namespace GADE_POE
             {
                 if (u.GetType() == typeof(RangedUnit))
                 {
-                    if (((RangedUnit)u).Faction != Faction && ((RangedUnit)u).IsDead() == false))
+                    if (((RangedUnit)u).Faction != Faction && ((RangedUnit)u).IsDead() == false)
                         if (DistanceTo(u) < closestDistance)
                         {
                             closest = u;

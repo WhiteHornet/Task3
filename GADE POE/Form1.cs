@@ -14,10 +14,10 @@ namespace GADE_POE
 {
     public partial class Form1 : Form
     {
-        Map map = new Map(20, 20, 20);
-        const int START_X = 20;
-        const int START_Y = 20;
-        const int SPACING = 10;
+        Map map = new Map(20, 30, 100);
+        const int START_X = 30;
+        const int START_Y = 10;
+        const int SPACING = 5;
         const int SIZE = 20;
         Random R = new Random();
         int turn = 0;
@@ -63,34 +63,35 @@ namespace GADE_POE
                     b.Click += new EventHandler(buttn_click);
                     groupBox1.Controls.Add(b);
                 }
-                foreach (Unit Y in map.Units)
-                {if (Y.GetType() == typeof(RangedUnit))
-                    {
-                        int start_x, start_y;
-                        start_x = groupBox1.Location.X;
-                        start_y = groupBox1.Location.Y;
-                        RangedUnit r = (RangedUnit)Y;
-                        Button b = new Button();
-                        b.Size = new Size(SIZE, SIZE);
-                        b.Location = new Point(start_x + (r.XPos * SIZE), start_y + (r.YPos * SIZE));
-                        b.Text = r.Symbol;
-                        if (r.Faction == 1)
-                        {
-                            b.ForeColor = Color.Blue;
-                        }
-                        else
-                        {
-                            b.ForeColor = Color.Orange;
-                        }
+                //foreach (Unit Y in map.Units)
+                //{
+                //    if (u.GetType() == typeof(RangedUnit))
+                //    {
+                //        int start_x, start_y;
+                //        start_x = groupBox1.Location.X;
+                //        start_y = groupBox1.Location.Y;
+                //        RangedUnit r = (RangedUnit)u;
+                //        Button a = new Button();
+                //        a.Size = new Size(SIZE, SIZE);
+                //        a.Location = new Point(start_x + (r.XPos * SIZE), start_y + (r.YPos * SIZE));
+                //        a.Text = r.Symbol;
+                //        if (r.Faction == 1)
+                //        {
+                //            a.ForeColor = Color.Blue;
+                //        }
+                //        else
+                //        {
+                //            a.ForeColor = Color.Orange;
+                //        }
 
-                        if (r.IsDead())
-                        {
-                            b.ForeColor = Color.Black;
-                        }
-                        b.Click += new EventHandler(buttn_click);
-                        groupBox1.Controls.Add(b);
-                    }
-                }
+                //        if (r.IsDead())
+                //        {
+                //            a.ForeColor = Color.Black;
+                //        }
+                //        a.Click += new EventHandler(buttn_click);
+                //        groupBox1.Controls.Add(a);
+                //    }
+                //}
                
             }
         }
@@ -133,42 +134,42 @@ namespace GADE_POE
                         }
                     }
                 }
-                foreach (Unit Y in map.Units)
-                {
-                    if (Y.GetType() == typeof(RangedUnit))
-                    {
-                        RangedUnit r = (RangedUnit)Y;
-                        if (r.Health < 25)// running away
-                        {
-                            switch (R.Next(0, 4))
-                            {
-                                case 0: r.Move(Direction.North); break;
-                                case 1: r.Move(Direction.East); break;
-                                case 2: r.Move(Direction.South); break;
-                                case 3: r.Move(Direction.West); break;
-                            }
-                        }
-                        else // in combat or moving toward
-                        {
-                            bool inCombat = false;
-                            foreach (Unit e in map.Units)
-                            {
+                //foreach (Unit Y in map.Units)
+                //{
+                //    if (u.GetType() == typeof(RangedUnit))
+                //    {
+                //        RangedUnit r = (RangedUnit)u;
+                //        if (r.Health < 25)// running away
+                //        {
+                //            switch (R.Next(0, 4))
+                //            {
+                //                case 0: r.Move(Direction.North); break;
+                //                case 1: r.Move(Direction.East); break;
+                //                case 2: r.Move(Direction.South); break;
+                //                case 3: r.Move(Direction.West); break;
+                //            }
+                //        }
+                //        else // in combat or moving toward
+                //        {
+                //            bool inCombat = false;
+                //            foreach (Unit e in map.Units)
+                //            {
 
-                                if (Y.inRange(e)) // in combat
-                                {
-                                    Y.Combat(e);
-                                    inCombat = true;
-                                }
-                            }
+                //                if (u.inRange(e)) // in combat
+                //                {
+                //                    u.Combat(e);
+                //                    inCombat = true;
+                //                }
+                //            }
 
-                            if (inCombat)
-                            {
-                                Unit c = r.Closest(map.Units);
-                                r.Move(r.DirectionTo(c));
-                            }
-                        }
-                    }
-                }
+                //            if (inCombat)
+                //            {
+                //                Unit c = r.Closest(map.Units);
+                //                r.Move(r.DirectionTo(c));
+                //            }
+                //        }
+                //    }
+                //}
             }
         }
             private void timer1_Tick(object sender, EventArgs e)
@@ -204,18 +205,23 @@ namespace GADE_POE
                     }
                 }
 
-                foreach (Unit Y in map.Units)
-                { if (Y.GetType() == typeof(RangedUnit))
-                    {
-                        RangedUnit r = (RangedUnit)u;
-                        if (r.XPos == x && r.YPos == y)
-                        {
-                            txtInfo.Text = "Button Clicked at: " + r.ToString();
-                        }
-                    }
-                }
+                //foreach (Unit Y in map.Units)
+                //{ if (u.GetType() == typeof(RangedUnit))
+                //    {
+                //        RangedUnit r = (RangedUnit)u;
+                //        if (r.XPos == x && r.YPos == y)
+                //        {
+                //            txtInfo.Text = "Button Clicked at: " + r.ToString();
+                //        }
+                //    }
+                //}
                 
             }
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -21,10 +21,20 @@ C:\Users\Mitchell Dreyer\source\repos\GADE POE - Copy\GADE POE\bin\Debug\GADE PO
 C:\Users\LPOTT\Downloads\POE Task 1\GADE POE - Copy\GADE POE\bin\Debug\GADE POE.exe.config
 C:\Users\LPOTT\Downloads\POE Task 1\GADE POE - Copy\GADE POE\bin\Debug\GADE POE.exe
 C:\Users\LPOTT\Downloads\POE Task 1\GADE POE - Copy\GADE POE\bin\Debug\GADE POE.pdb
-C:\Users\LPOTT\Downloads\POE Task 1\GADE POE - Copy\GADE POE\obj\Debug\GADE POE.csprojResolveAssemblyReference.cache
 C:\Users\LPOTT\Downloads\POE Task 1\GADE POE - Copy\GADE POE\obj\Debug\GADE_POE.Form1.resources
 C:\Users\LPOTT\Downloads\POE Task 1\GADE POE - Copy\GADE POE\obj\Debug\GADE_POE.Properties.Resources.resources
 C:\Users\LPOTT\Downloads\POE Task 1\GADE POE - Copy\GADE POE\obj\Debug\GADE POE.csproj.GenerateResource.cache
 C:\Users\LPOTT\Downloads\POE Task 1\GADE POE - Copy\GADE POE\obj\Debug\GADE POE.csproj.CoreCompileInputs.cache
 C:\Users\LPOTT\Downloads\POE Task 1\GADE POE - Copy\GADE POE\obj\Debug\GADE POE.exe
 C:\Users\LPOTT\Downloads\POE Task 1\GADE POE - Copy\GADE POE\obj\Debug\GADE POE.pdb
+C:\Users\LPOTT\Downloads\POE Task 1\GADE POE - Copy\GADE POE\obj\Debug\GADE POE.csprojAssemblyReference.cache
+C:\Users\LPOTT\Downloads\POE Task 1 2020\GADE POE - Copy\GADE POE\bin\Debug\GADE POE.exe.config
+C:\Users\LPOTT\Downloads\POE Task 1 2020\GADE POE - Copy\GADE POE\bin\Debug\GADE POE.exe
+C:\Users\LPOTT\Downloads\POE Task 1 2020\GADE POE - Copy\GADE POE\bin\Debug\GADE POE.pdb
+C:\Users\LPOTT\Downloads\POE Task 1 2020\GADE POE - Copy\GADE POE\obj\Debug\GADE POE.csprojAssemblyReference.cache
+C:\Users\LPOTT\Downloads\POE Task 1 2020\GADE POE - Copy\GADE POE\obj\Debug\GADE_POE.Form1.resources
+C:\Users\LPOTT\Downloads\POE Task 1 2020\GADE POE - Copy\GADE POE\obj\Debug\GADE_POE.Properties.Resources.resources
+C:\Users\LPOTT\Downloads\POE Task 1 2020\GADE POE - Copy\GADE POE\obj\Debug\GADE POE.csproj.GenerateResource.cache
+C:\Users\LPOTT\Downloads\POE Task 1 2020\GADE POE - Copy\GADE POE\obj\Debug\GADE POE.csproj.CoreCompileInputs.cache
+C:\Users\LPOTT\Downloads\POE Task 1 2020\GADE POE - Copy\GADE POE\obj\Debug\GADE POE.exe
+C:\Users\LPOTT\Downloads\POE Task 1 2020\GADE POE - Copy\GADE POE\obj\Debug\GADE POE.pdb
